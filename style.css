@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.kalender {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 300px;
+}
+
+.kepala {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.tombol-nav {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#bulan-tahun {
+  font-size: 1.2rem;
+}
+
+.hari-minggu,
+.hari {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hari-minggu div,
+.hari div {
+  width: calc(100% / 7);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.hari-minggu {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.hari div.angka {
+  cursor: pointer;
+}
+
+.hari div.angka:hover {
+  background-color: #f0f0f0;
+}
